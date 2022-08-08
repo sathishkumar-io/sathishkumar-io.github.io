@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color: #212121;
+    --background: #ffffff;
+    --red: tomato;
+    --blue: #1a73e8;
+    --green: green;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color);
+    background-color: #f9faff;
+    font-size: 18px;
+    font-family:'Poppins', 'sans-serif';
+    font-weight: 400;
+    line-height: 1.8;
+    scroll-behavior: smooth;
+}
+
+section {
+    margin: 1em 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Heading */
+
+.heading {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* Start Game Button */
+
+#start {
+    color: var(--background);
+    background-color: var(--blue);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    box-shadow: 0 0 1.25em 0.188em #00000029;
+}
+
+/* Text and Input Area */
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Random Text */
+
+.text .randomtext {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+/* Text Input */
+
+input[type="text"] {
+    font-size: 18px;
+    padding: 15px;
+    width: 400px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+
+input[type="text"]:focus {
+    border: none;
+    outline: none;
+}
+
+/* Time and Score */
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.time, .score {
+    font-weight: bold;
+}
+
+.time span {
+    color: red;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.score span {
+    color: var(--blue);
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.text, .progress {
+    display: none;
+}
+
+/* Game Over */
+
+.game-over {
+    display: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+    color: rgba(255, 0, 0, 0.889);
+}
+
+/* Instruction */
+
+.instruction {
+    width: 80%;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    overflow: hidden;
+    font-size: 18px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px 0;
+    background-color: var(--background);
+    border-radius: 5px;
+}
+
+.instruction .instruct-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.instruction ol {
+    padding-left: 15px;
+}
+
+.instruction ol li::marker {
+    font-weight: bold;
+}
+
+/* Active  */
+
+.active {
+    display: flex;
+}
+
+/* Responsive Design */
+
+@media (max-width: 499px) {
+    input[type="text"], .instruction {
+        width: 100%;
+    }
+}

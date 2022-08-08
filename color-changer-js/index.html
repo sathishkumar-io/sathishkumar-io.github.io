@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <link rel="shortcut icon" href="/color-changer-js/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/color-changer-js/assets/css/style.css">
+    <script type="text/javascript" src="/color-changer-js/assets/js/main.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <h2 class="cc-title">Color Changer</h2>
+            <div class="cc-greetings center">
+                <h3 class="cc-greetings-text">Welcome to my <span>JS</span> Arena!</h3>
+            </div>
+            <div id="cc-box" class="cc-box" style="background-color: #ffe600;">
+                <p id="cc-box-text" class="cc-box-text">SK Universe</p>
+            </div>
+            <div class="palettes">
+                <div class="left-cl">
+                    <p>Background Color</p>
+                    <input type="color" id="color-bg" class="color-palatte" value="#ffe600">
+                </div>
+                <div class="right-cl">
+                    <p>Text Color</p>
+                    <input type="color" id="color-txt" class="color-palatte">
+                </div>
+            </div>
+            <div class="text-area">
+                <input type="text" id="text-box" class="text-box" value="SK Universe" placeholder="Type Your Text (max 11)" maxlength="11">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

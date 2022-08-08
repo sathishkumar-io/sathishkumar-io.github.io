@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="heading">Beat The Word</div>
+            <button id="start">START MATCH</button>
+            <div class="text">
+                <div class="randomtext">one</div>
+                <input type="text" name="typingtext" id="text-box" placeholder="Enter Text" value="">
+                <div class="game-over">Game Over :(</div>
+            </div>
+            <div class="progress">
+                <div class="time">Time Left: <span id="countdown">5</span></div>
+                <div class="score">Your Score: <span id="totalscore">0</span></div>
+            </div>
+            <div class="instruction">
+                <div class="instruct-title">Instructions</div>
+                <ol>
+                    <li><b>START GAME</b> button to start the game</li>
+                    <li>Each typing word  has displayed in huge size text.</li>
+                    <li>Enter the display text in input box.</li>
+                    <li>Beat the each word in until <b>5 Seconds</b>.</li>
+                    <li>Timer is started when you click START GAME button.</li>
+                    <li>If you typed word has been matched to the random word, your score has been increase.</li>
+                    <li><b>Note: </b>If Game Over, Just type the current display word. Then the game restarted automatically.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="assets/js/script.js" defer></script>
+</body>
+</html>

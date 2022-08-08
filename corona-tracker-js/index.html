@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>COVID-19 Tracker</title>
+      <link rel="shortcut icon" href="/corona-tracker/assets/img/favicon.ico" type="image/x-icon">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="/corona-tracker-js/assets/css/style.css">
+      <script type="text/javascript" src="/corona-tracker-js/assets/js/main.js" defer></script>
+   </head>
+   <body>
+      <section>
+         <div class="container">
+            <div class="left">
+               <div class="heading_container">
+                  <img src="/corona-tracker-js/assets/img/covid.png" alt="covid">
+                  <h1 class="heading">COVID-19 Tracker</h1>
+               </div>
+               <div class="world_header">
+                  <div class="world_heading">Global</div>
+                  <div class="world_query">Today</div>
+               </div>
+               <div class="world_count_boxes">
+                  <div class="box">
+                     <div class="box_title_cases">Today Cases</div>
+                     <div class="world_cases_count">0</div>
+                     <div class="world_total_cases">Total: 0</div>
+                  </div>
+                  <div class="box">
+                     <div class="box_title_recovers">Today Recovery</div>
+                     <div class="world_recover_count">0</div>
+                     <div class="world_total_recover">Total: 0</div>
+                  </div>
+                  <div class="box">
+                     <div class="box_title_deaths">Today Deaths</div>
+                     <div class="world_deaths_count">0</div>
+                     <div class="world_total_deaths">Total: 0</div>
+                  </div>
+               </div>
+               <div class="country_selection_container">
+                  <div class="selection">
+                     <select id="select_country">
+                        <option value>Select Your Country</option>
+                     </select>
+                     <div class="select_country_name">Country Name</div>
+                  </div>
+                  <div class="selected_country">
+                     <div class="country">
+                        <div class="box">
+                           <div class="box_title_cases">COVID-19 Cases</div>
+                           <div class="world_cases_count">Nan</div>
+                           <div class="world_total_cases">Today: Nan</div>
+                        </div>
+                        <div class="box">
+                           <div class="box_title_recovers">Recovers</div>
+                           <div class="world_recover_count">Nan</div>
+                           <div class="world_total_recover">Today: Nan</div>
+                        </div>
+                        <div class="box">
+                           <div class="box_title_deaths">Deaths</div>
+                           <div class="world_deaths_count">Nan</div>
+                           <div class="world_total_deaths">Today: Nan</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="footer_alert">Wear Mask and Stay Safe!</div>
+            </div>
+            <div class="right">
+               <div class="countries_table">
+                  <div class="countries_table_title">Live Cases of Countries</div>
+                  <div class="countries_case_info">
+                     <div class="countries_info_box">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </body>
+</html>

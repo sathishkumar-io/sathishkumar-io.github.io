@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+section {
+    margin: 1em 0;
+}
+
+.container {
+    width: 75%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    -webkit-animation-name: glow;
+    -webkit-animation-duration: .5s;
+    animation-name: glow;
+    animation-duration: .5s;
+}
+
+@-webkit-keyframes glow {
+    from {opacity: .1}
+    to {opacity: 1;}
+}
+
+@keyframes glow {
+    from {opacity: .1}
+    to {opacity: 1;}
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    color: #ffffff;
+}
+
+.prev i {
+    padding: 15px;
+    font-size: 22px;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    color: #ffffff;
+}
+
+.next i {
+    padding: 15px;
+    font-size: 22px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.indigators {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indigators .mark {
+    width: 25px;
+    height: 5px;
+    background-color: #dddddd;
+    margin: 0 5px;
+    border-radius: 20px;
+}
+
+.active {
+    background-color: #aaaaaa!important;
+}
+
+@media(max-width:768px) {
+    .container {
+        width: 100%;
+    }
+    .prev, .next {
+        top: 40%;
+    }
+}
