@@ -1,0 +1,87 @@
+@font-face{
+    font-family: 'digital-7';
+    src: url('/digital-clock-js/assets/font/digital-7.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-family: 'digital-7';
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #222831;
+}
+
+.digital-clock {
+    color: #00FFF5;
+    font-size: 13em;
+    letter-spacing: 10px;
+}
+
+.cycle {
+    color: #00FFF5;
+    font-size: .5em;
+    margin-left: 20px;
+    letter-spacing: 5px;
+}
+.digital-day {
+    color: #00dbe7;
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+
+.blink {
+    animation: blinking 1s linear infinite;
+}
+
+@keyframes blinking {
+    0% {
+        visibility: hidden;
+      }
+      50% {
+        visibility: hidden;
+      }
+      100% {
+        visibility: visible;
+      }
+}
+
+@media(max-width: 960px) {
+    .digital-clock {
+        font-size: 7em;
+    }
+}
+
+@media(max-width: 640px) {
+    .digital-clock {
+        font-size: 5em;
+    }
+
+    .cycle {
+        margin-left: 0;
+    }
+
+    .digital-day {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width: 480px) {
+    .digital-clock {
+        font-size: 3.5em;
+    }
+
+    .digital-day {
+        font-size: 1em;
+    }
+}
