@@ -5,6 +5,7 @@ setInterval(()=> {
 (digitalClock)=()=> {
 const dClock = document.querySelector('.digital-clock');
 const dDay = document.querySelector('.digital-day');
+const dDate = document.querySelector('.digital-date');
 
 const date = new Date();
 let hour = zero(date.getHours());
@@ -20,7 +21,8 @@ const month = zero(date.getMonth()+1);
 const year = date.getFullYear();
 
 dClock.innerHTML = `${hour}<span class="blink">:</span>${min}<span class="blink">:</span>${sec}${dCycle}`;
-dDay.innerHTML = `${days[day]} - <span class="digital-date">${todayDate}/${month}/${year}</span>`;
+dDay.innerHTML = `${days[day]}`;
+dDate.innerHTML = `${todayDate}/${month}/${year}`;
 };
 
 function zero(x) {
