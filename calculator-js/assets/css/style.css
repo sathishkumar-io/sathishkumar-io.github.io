@@ -81,3 +81,9 @@ html {
     filter: drop-shadow(2px 5px 3px #bde4ff);
     cursor: pointer;
 }
+
+@media(max-width: 480px) {
+    .result-container, .number-container, .operator-container, .equal-container {
+        width: 90%;
+    }
+}
