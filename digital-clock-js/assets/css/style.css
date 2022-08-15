@@ -40,6 +40,12 @@ html {
     letter-spacing: 10px;
 }
 
+.digital-date {
+    color: #00dbe7;
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+
 .blink {
     animation: blinking 1s linear infinite;
 }
@@ -82,6 +88,10 @@ html {
     }
 
     .digital-day {
-        font-size: 1em;
+        font-size: 2em;
+    }
+
+    .digital-date {
+        font-size: 2em;
     }
 }
