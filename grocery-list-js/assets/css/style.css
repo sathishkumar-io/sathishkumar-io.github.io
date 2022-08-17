@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    background-color: #f8f8f8;
+    color: #282828;
+    line-height: 1.8;
+}
+
+body {
+    overflow-y: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 99vh;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.title i {
+    margin-right: 15px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+}
+
+#grocery-input {
+    width: 90%;
+    height: 35px;
+    background-color: #ffffff;
+    padding: 0 15px;
+    border-radius: 10px;
+    border: 3px solid #eeeeee;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#grocery-input:focus {
+    outline: none;
+}
+
+.del-icon i {
+    cursor: pointer;
+    position: relative;
+    margin-left: 15px;
+    top: 10px;
+    font-size: 25px;
+    width: 20px;
+    height: 20px;
+    color: #cccccc;
+    margin-top: 15px;
+}
+
+#items {
+    min-height: 60vh;
+    padding: 20px;
+    width: 480px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 3px solid #eeeeee;
+    filter: drop-shadow(0 0 10px #eeeeee);
+    margin-bottom: 10px;
+}
+
+.item-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item i {
+    cursor: pointer;
+    position: relative;
+    margin-right: 15px;
+    bottom: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.item i:hover {
+    color: #34b223;
+    transition: .5s;
+}
+
+.fa-solid.fa-square-check {
+    color: #34b223;
+    transition: .5s;
+}
+
+.item-del i {
+    cursor: pointer;
+    position: relative;
+    margin-left: 10px;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    color: #cccccc;
+}
+
+.item-del i:hover, .del-icon i:hover {
+    color: #f20000;
+    transition: .5s;
+}
+
+.line {
+    height: 1.5px;
+    width: 100%;
+    background-color: #8d8d8d1a;
+    margin: 15px 0;
+    display: block;
+    margin-top: 10px;
+}
+
+.line:nth-last-child(1) {
+    height: 0;
+}
+
+@media(max-width:480px) {
+    .input-container {
+        width: 90%;
+    }
+    #items {
+        width: 80%;
+    }
+    .title {
+        font-size: 26px;
+    }
+}
