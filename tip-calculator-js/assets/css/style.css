@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    background-color: #f8f8f8;
+    color: #282828;
+    line-height: 1.8;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tip-calc-container {
+    width: 480px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 10px #eeeeee);
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+}
+
+.line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #eeeeee;
+    margin: 20px 0;
+}
+
+.input-container {
+    margin: 20px 0;
+}
+
+.input-container i {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.amount, .person {
+    width: 85%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #eeeeee;
+}
+
+.amount:focus, .person:focus {
+    outline: none;
+}
+
+.input-container #quality-select {
+    background-color: #eeeeee;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+#calculate {
+    width: 100%;
+    background-color: #3484F0;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgb(151, 186, 255));
+}
+
+.title-2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.result-1, .result-2, .result-3, .result-4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tip-ep, .total-bill-ep, .tip-amount-total, .total-bill-tip {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+@media(max-width: 480px) {
+    .tip-calc-container {
+        width: 80%;
+    }
+    .title {
+        font-size: 26px;
+    }
+    .amount, .person {
+        width: 75%;
+    }
+    .title-2 {
+        font-size: 26px;
+    }
+}

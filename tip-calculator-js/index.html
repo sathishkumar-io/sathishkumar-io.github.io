@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator JS</title>
+    <link rel="stylesheet" href="/tip-calculator-js/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tip-calc-container">
+            <h1 class="title">Tip Calculator</h1>
+            <span class="line"></span>
+            <div class="input-container">
+                <i class="fa-solid fa-dollar-sign"></i><input type="number" class="amount" min="0" placeholder="Enter Bill Amount">
+            </div>
+            <div class="input-container">
+                <i class="fa-solid fa-person"></i><input type="number" class="person" min="1" placeholder="No. of Guests">
+            </div>
+            <div class="input-container">
+                <i class="fa-solid fa-star"></i>
+                 <select id="quality-select">
+                    <option value>Choose Quality</option>
+                    <option value="0.18">Excellent - 18%</option>
+                    <option value="0.1">Good - 10%</option>
+                    <option value="0.05">Poor - 5%</option>
+                 </select>
+            </div>
+            <span class="line"></span>
+            <button id="calculate">Calculate</button>
+            <span class="line"></span>
+            <div class="result-container">
+                <h2 class="title-2">Total</h2>
+                <p class="result-1">Tip Each Person: <span class="tip-ep">$0</span></p>
+                <p class="result-2">Total Bill Each Person: <span class="total-bill-ep">$0</span></p>
+                <span class="line"></span>
+                <p class="result-3">Tip Total: <span class="tip-amount-total">$0</span></p>
+                <p class="result-4">Total (Bill + Tip): <span class="total-bill-tip">$0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="/tip-calculator-js/assets/js/script.js"></script>
+</body>
+</html>
