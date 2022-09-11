@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player JS</title>
+   <link rel="stylesheet" href="/music-player-js/assets/css/app.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="music-container">
+                <audio id="track" src=""></audio>
+                <div class="song-title">Track Name</div>
+                <div class="cover-container">
+                    <img class="cover" src="/music-player-js/assets/img/default.png">
+                </div>
+                <div class="duration-container">
+                    <input type="range" name="duration" id="duration" min="0" max="100" value="0" step="1">
+                </div>
+                <div class="time-container">
+                    <div class="current-time">
+                    </div>
+                    <div class="total-time">
+                    </div>
+                </div>
+                <div class="icons-container">
+                    <div class="prev-icon">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div class="play-pause-icon">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <div class="next-icon">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/music-player-js/assets/js/app.js"></script>
+</body>
+</html>
